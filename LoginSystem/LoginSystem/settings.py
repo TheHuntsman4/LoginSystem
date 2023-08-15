@@ -15,7 +15,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 print(BASE_DIR)
-LOGIN_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "/44c6a349bd464ceb160a281c4ebad56ad573/"
 
 
 # Quick-start development settings - unsuitable for production
