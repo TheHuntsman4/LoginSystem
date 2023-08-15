@@ -4,8 +4,73 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  Hi {{ user.username }}
-  Django Auth alTutori ep-9/11 Bin Laden did nothing wrong
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICS and SCADA Plants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ICS and SCADA Plants</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main style="color: black;">
+        <h2>Welcome to the ics and scada plant</h2>
+        <p>We specialize in designing and optimizing industrial control systems and SCADA solutions for various plants and industries. Our team of experts ensures reliable and efficient operation of your processes.</p>
+        <h3>Our Services</h3>
+        <ul>
+            <li>Custom ICS and SCADA Solutions</li>
+            <li>Process Automation</li>
+            <li>Remote Monitoring</li>
+            <li>Data Analysis and Reporting</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 ICS and SCADA Plants</p>
+    </footer>
+</body>
+</html> 
 {% else %}
   <p>You are not logged in</p>
   <a href="{% url 'login' %}">Log In</a>
